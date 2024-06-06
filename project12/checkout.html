@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="checkoutLayout">
+        <div class="returnCart">
+            <a href="/">Keep Shopping</a>
+            <h1>List Product in Cart</h1>
+            <div class="list">
+                <div class="item">
+                    <img src="img/front img.jpeg" alt="">
+                    <div class="info">
+                        <div class="name">Fruit Salad</div>
+                        <div class="price">$22/1 product</div>
+                    </div>
+                    <div class="quantity">5</div>
+                    <div class="returnPrice">$110</div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Checkout</h1>
+            <form action="process_checkout.php" method="post" class="form">
+                <div class="group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="group">
+                    <label for="table_no">Table Number</label>
+                    <input type="text" name="table_no" id="table_no" required>
+                </div>
+                <div class="group">
+                    <label for="mob_no">Mobile Number</label>
+                    <input type="text" name="mob_no" id="mob_no" required>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="totalQuantity">5</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="totalPrice">$110</div>
+                    </div>
+                </div>
+                <button type="submit" class="buttonCheckout">CHECKOUT</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="checkout.js"></script>
+</body>
+</html>

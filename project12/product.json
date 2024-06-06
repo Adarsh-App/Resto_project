@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "fruit salad",
+        "price": 520,
+        "image": "images/fruit salad.webp"
+    },
+    {
+        "id": 2,
+        "name": "Healthy food juice",
+        "price": 220,
+        "image": "images/juice.jpg"
+    },
+    {
+        "id": 3,
+        "name": "panair salad",
+        "price": 250,
+        "image": "images/panair salad.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "watermelon juice",
+        "price": 420,
+        "image": "images/watermelon juice.jpg"
+    },
+    {
+        "id": 5,
+        "name": "juice",
+        "price": 120,
+        "image": "images/juice.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Product 6",
+        "price": 120,
+        "image": "images/fruit salad.webp"
+    }
+]

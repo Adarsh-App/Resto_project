@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+    <title>Reasturant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Popup styles */
+        .popup {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+            z-index: 1000;
+        }
+        .popup h2 {
+            margin: 0 0 10px;
+        }
+        .popup p {
+            margin: 0 0 20px;
+        }
+        .popup button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Healthy Foodie Restaurant</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="iconCart">
+                <img src="images/icons8-shopping-cart-24.png">
+                <div class="totalQuantity">0</div>
+            </div>
+        </header>
+       
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+                <h1 class="main-title" id="home">Eat Right Food</h1>
+                <p>Eat Healty, it is good for our health.</p>
+                
+            </div>
+        </section>
+       
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've beem making healthy food last for 10 years</h2>
+                <p>
+                    At Healthy Foodie Reasturant, we create good memories by serving original-style deep-dish pizza using a recipe that has been passed down over generations. Our restaurant provides an authentic dining experience that is unique to the area.<br>
+                    We believe in the commitment to our community and in fostering long term relationships with local farmers and fishermen. Our menus reflect these connections, featuring local, seasonal produce and sustainably sourced seafood and meats.
+
+
+
+                </p>
+            </div>
+        
+    </section>
+    <section id="food">
+        <h2>Food menu</h2>
+        <div class="food-container container">
+            </div>
+        </section>
+
+    <div class="listProduct">
+        <a href="#food-menu" class="btn btn-primary">Menu</a>
+    
+        <div class="item">
+            <img src="img/1.webp"">
+            <h2>CoPilot / Black / Automatic</h2>
+            <div class="price">$550</div>
+            <button>Add To Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <div class="cart">
+        <h2>
+            CART
+        </h2>
+
+        <div class="listCart">
+
+
+            <div class="item">
+                <img src="img/1.webp">
+                <div class="content">
+                    <div class="name">CoPilot / Black / Automatic</div>
+                    <div class="price">$550 / 1 product</div>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span class="value">3</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="buttons">
+            <div class="close">
+                CLOSE
+            </div>
+            <div class="checkout">
+                <a href="checkout.html">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <section id="testimonials">
+        <h2 class="testimonial-title">What Our Customers Say</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                        <p class="customer-name">Ross Lee</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. The meals served rapidly and the rates were reasonable. Highly recommended.
+
+
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+                        <p class="customer-name">Amelia Watson</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Delicious food, waiters are very attentive, and super nice atmosphere. Plus it’s all at an affordable price.
+Can totally recommend it and will definitely come back again
+                </p>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                        <p class="customer-name">Ben Roy</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Outstanding meal here. I had the (FN) and my colleague had the (FN).
+                    The staff does an amazing job of describing anything on the menu and the ambiance is very cool. Can’t wait to come back
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+
+            <div class="form-container">
+                
+            <h2>Contact Us</h2>
+            <p1>Email: info@restaurant.com</p1>
+            <p2>Phone: 123-456-7890</p2>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2> Thank you so much... <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html></h2>
+    </footer>
+    <!-- .................../ JS Code for smooth scrolling /...................... -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+<script>
+    function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+// Function to show popup with customer name and order time
+function showPopup() {
+    var name = getUrlParameter('name');
+    var time = getUrlParameter('time');
+    if (name && time) {
+        var message = 'Thank you, ' + name + '! Your order was placed successfully at ' + time + '. Please wait for 10-20 minutes for your order to be ready.';
+        alert(message); // You can customize this to show a modal or other type of popup
+    }
+}
+
+// Show popup when the page loads
+window.onload = function() {
+    showPopup();
+};</script>
+<script>
+    function clearCart() {
+        listCart = []; // Reset the listCart array to an empty array
+        // Update the cart display on the webpage
+        addCartToHTML();
+    }
+
+    // Function to show popup with customer name and order time
+    function showPopup() {
+        var name = getUrlParameter('name');
+        var time = getUrlParameter('time');
+        if (name && time) {
+            var message = 'Thank you, ' + name + '! Your order was placed successfully at ' + time + '. Please wait for 10-20 minutes for your order to be ready.';
+            alert(message); // You can customize this to show a modal or other type of popup
+            clearCart(); // Call the clearCart function to empty the cart
+        }
+    }
+
+    // Show popup when the page loads
+    window.onload = function() {
+        showPopup();
+    };
+</script>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
